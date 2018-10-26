@@ -12,5 +12,27 @@ The web server is running a WSGI script.
 You do not need to do custom modifications.
 
 # Installation
-git clone 
+` # git clone https://github.com/riadhhamdi/PythonAPI.git `
+` # cd PythonAPI`
+` # bash setup.sh`
+
+# Usage
+
+At the end of the process the API is ready and you can start using it 
+
+- To get the list of employees 
+
+GET http://<ip_of_your_server>/api/employees      
+
+- to add a new employee
+
+POST http://<ip_of_your_server>/api/employees
+{
+"FirstName": "MyFirstName",
+"LastName": "MyLastName",
+"Email": "myemail@mycompany.com"
+}
+
+- to delete an employee
+DELETE http://<ip_of_your_server>/api/employees/<id_of_employee>
 
