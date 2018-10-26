@@ -19,6 +19,7 @@
     service: http
     state: enabled 
     immediate: yes 
+    permanent: true 
 - name: configure Selinux 
   seboolean:
     name: mysql_connect_any
@@ -32,4 +33,5 @@
 - name: Ensure Httpd restarted 
   service: 
     name: httpd  
-    state: restarted 
+    state: restarted
+    enabled: true 
