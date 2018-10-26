@@ -27,11 +27,11 @@ GET http://<ip_of_your_server>/api/employees
 - to add a new employee
 
 POST http://<ip_of_your_server>/api/employees
-{
+`{
 "FirstName": "MyFirstName",
 "LastName": "MyLastName",
 "Email": "myemail@mycompany.com"
-}
+}`
 
 - to delete an employee
 DELETE http://<ip_of_your_server>/api/employees/<id_of_employee>
