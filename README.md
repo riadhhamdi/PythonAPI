@@ -38,5 +38,6 @@ POST http://<ip_of_your_server>/api/employees
 
 
 - to delete an employee
+
 DELETE http://<ip_of_your_server>/api/employees/<id_of_employee>
 
