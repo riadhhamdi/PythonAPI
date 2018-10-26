@@ -32,11 +32,8 @@ POST http://<ip_of_your_server>/api/employees
 
 `{
 "FirstName": "MyFirstName",
-
 "LastName": "MyLastName",
-
 "Email": "myemail@mycompany.com"
-
 }`
 
 
