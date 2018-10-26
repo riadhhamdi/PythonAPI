@@ -13,7 +13,9 @@ You do not need to do custom modifications.
 
 # Installation
 ` # git clone https://github.com/riadhhamdi/PythonAPI.git `
+
 ` # cd PythonAPI`
+
 ` # bash setup.sh`
 
 # Usage
