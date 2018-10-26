@@ -2,6 +2,7 @@
   service:
     name: mariadb
     state: started 
+    enabled: true
 - name: Create Database User 
   mysql_user:
     name: "{{mysql_con_user}}"
