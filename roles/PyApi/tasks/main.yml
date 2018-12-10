@@ -1,6 +1,8 @@
 - name: Install epel release 
   yum:
-    name: epel-release 
+    name: 
+      - epel-release 
+      - firewalld
     state: present
 - name: install all Infra the tools required   
   include: install_infra.yml 
@@ -17,6 +19,11 @@
     name: "{{item}}"
     state: started 
   with_items: "{{infra_services}}" 
+ 
+- name: Ensure service firewalld is enabled
+  service:
+     name: firewalld
+     state: started 
         
 - name: Open required ports on firewall 
   firewalld:
